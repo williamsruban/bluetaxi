@@ -8,3 +8,9 @@ use Illuminate\Support\Facades\Route;
 //     }
 // })->name('login');
 
+Route::get('/', function () {
+    return response()->json([
+        'success' => true,
+        'message' => 'BlueTaxi API is running successfully',
+    ], 200);
+});
